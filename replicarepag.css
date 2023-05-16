@@ -1,0 +1,53 @@
+body{
+    background-color: aliceblue;
+    margin: 0;
+}
+.container {  display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 0.2fr 2.6fr 0.2fr;
+    gap: 20px 30px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header header"
+      "newscont fbcontainter"
+      "footer footer";
+  }
+  
+  .header { grid-area: header;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 5px solid grey;
+    
+ }
+  
+  .newscont { grid-area: newscont; background-color: blueviolet;
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    justify-content: space-evenly;
+}
+  
+  
+  .fbcontainter { grid-area: fbcontainter; background-color: cornflowerblue;
+  
+  }
+  
+  .footer { grid-area: footer; background-color: darkslateblue; }
+   
+  button{
+    background-color: darkblue;
+    color: white;
+    font-size: larger;
+    border-radius: 12px;
+    width: 210px;
+    align-self: flex-end;
+    height: 50px;
+    margin: 8px;
+    
+
+    
+    
+    
+  }
+
+
